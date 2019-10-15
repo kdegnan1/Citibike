@@ -3,7 +3,7 @@ import './styles/index.scss';
 window.addEventListener('DOMContentLoaded', () => {
     console.log('loaded')
     fetch('https://cors-anywhere.herokuapp.com/http://citibikenyc.com/stations/json'
-).then(res => console.log(res)) 
+    ).then(res => console.log(res)) 
 });
 
 // window.addEventListener('DOMContentLoaded', () => {
