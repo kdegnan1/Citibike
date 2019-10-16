@@ -1,13 +1,15 @@
 import './styles/index.scss';
-
-
-
-
-
-
+import makeRequest from './fetch'
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('loaded')
+    makeRequest('GET', 'https://cors-anywhere.herokuapp.com/http://citibikenyc.com/stations/json')
+    .then(function (datums) {
+        console.log(datums);
+    })
+
+}); 
+
 
 
     // fetch('http://citibikenyc.com/stations/json'
@@ -22,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //         availableDocks = resp[stationBeanList][availableDocks]
     //     })
         
-    })
+ 
 
 
 // window.addEventListener('DOMContentLoaded', () => {

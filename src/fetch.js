@@ -1,19 +1,31 @@
 
-function makeRequest('GET', 'http://citibikenyc.com/stations/json', true) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://citibikenyc.com/stations/json');
-    xhr.onload = function () {
-        done(null, xhr.response);
-    };
-    xhr.send();
+const makeRequest= (method, url) => {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        const data = xhr.open(method, url);
+        xhr.onload = function () {
+            if (this.status >= 200 && this.status < 300) {
+                resolve(xhr.response);
+            } else {
+                reject({
+                    status: this.status,
+                    statusText: xhr.statusText
+                });
+            }
+        };
+        xhr.onerror = function () {
+            reject({
+                status: this.status,
+                statusText: xhr.statusText
+            });
+        };
+        xhr.send();
+    });
 }
 
-export default makeRequest; 
-// And we'd call it as such:
 
-makeRequest('GET', 'http://example.com', function (err, datums) {
-    if (err) { throw err; }
-    console.log(datums);
-});
+export default makeRequest; 
+
+
 
 
