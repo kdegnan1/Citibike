@@ -7,9 +7,16 @@ window.addEventListener('DOMContentLoaded', () => {
     .then((datums) => {
     let info = []; 
     JSON.parse(datums)["stationBeanList"].forEach( bike => { 
+
+        let icon = {
+            url: 'https://i.imgur.com/4dysiV6.png', 
+            scaledSize: new google.maps.Size(50, 50), // scaled size
+        };
             let marker = new google.maps.Marker({
                 position: { lat: bike['latitude'], lng: bike['longitude'] },
-                label: bike['availableDocks'].toString()
+                title: 'Available Bikes:  ' +  bike['availableBikes'].toString(), 
+                icon: icon
+                // icon: 'http://maps.google.com/mapfiles/kml/paddle/blu-blank-lv.png'
             });
         marker.setMap(map) 
         })}
