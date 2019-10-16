@@ -7,42 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/main.css">
     <title>Document</title>
+    
+    <div id="map"></div>
+    
+    <script src="lib/map.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0eLDJgLGyoqtqyA7cHYbexDoGjuFfxuk&callback=initMap"></script>
+    
+    <script src="./dist/main.js"></script>
 </head>
 
 <body>
-    <div id="map"></div>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0eLDJgLGyoqtqyA7cHYbexDoGjuFfxuk&callback=initMap" async defer></script> -->
-    <!-- <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: 40.73778, lng: -73.98611},
-                zoom: 13
-            });
-
-                var locations = [
-                { lat: 40.7128, lng: -74.0060 },
-                { lat: 40.7484, lng: -73.9857 }
-                ]
-                var markers = locations.map(function (location, i) {
-                    return new google.maps.Marker({
-                        position: location,
-                        label: "Hi"
-                    });
-                });
-                console.log(markers)
-                markers.forEach ( marker => marker.setMap(map)); 
-                
-            }
-           
-          
-    </script> -->
-
-    <script src="lib/map.js"></script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0eLDJgLGyoqtqyA7cHYbexDoGjuFfxuk&callback=initMap"></script>
-
-    <script src="./dist/main.js"></script>
+    </div class="box">
+        <title class="main-title">Travel with citibike! </title>
+    <div>
+        <input type="text">
 </body>
 
 </html>
