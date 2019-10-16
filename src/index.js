@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     JSON.parse(datums)["stationBeanList"].forEach( bike => { 
             let marker = new google.maps.Marker({
                 position: { lat: bike['latitude'], lng: bike['longitude'] },
-                label: bike['availableDocks'].to_s
+                label: bike['availableDocks'].toString()
             });
         marker.setMap(map) 
         })}
