@@ -1,10 +1,29 @@
 import './styles/index.scss';
 
+
+
+
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
     console.log('loaded')
-    fetch('https://cors-anywhere.herokuapp.com/http://citibikenyc.com/stations/json'
-    ).then(res => console.log(res)) 
-});
+
+
+    // fetch('http://citibikenyc.com/stations/json'
+    // ).then(res => res.json()
+    // ).then( 
+    //     data => console.log(data)
+    // ) 
+    // ).then(res => { 
+    //     res.map( resp => {
+    //         latitude = resp[stationBeanList][latitude], 
+    //         longitute = resp[stationBeanList][longitude], 
+    //         availableDocks = resp[stationBeanList][availableDocks]
+    //     })
+        
+    })
+
 
 // window.addEventListener('DOMContentLoaded', () => {
 //     console.log('loaded')
