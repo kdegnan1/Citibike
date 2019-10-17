@@ -1,21 +1,20 @@
 * Citibike NYC Data Visualization
+
 * Background and Overview
     * Motivation for project
-        * This data visualization will show the movement of citibike riders in a given day coming in and out of manhattan. It will show the change in traffic patterns throughout a day and the density of riders throughout the city with a heat map. 
-    * Getting citibike rider info from:  https://s3.amazonaws.com/tripdata/index.html
+        * This data visualization will show the locations of bike stations and available bikes in the NYC Area.  
+    * Citibike live bike station API:  http://citibikenyc.com/stations/json'
+    
 * Functionality and MVP Features
-    * Make each bike object a moving dot throughout the map from start point to end point. 
-    * Use Google Maps to estimate the trips of each bike ride. 
-    * Show all the Citibike stations in the city. 
-    * Use a heatmap to show the density of riders in the city. 
-    * Start, pause and skip through the visualization. 
+    * Create a map of the NYC Area
+    * Use Google Maps to mark each city bike station given by the API
+    * Get live data of bikes available at any station in the city. 
+    * Show all the Citibike stations in the NYC Area
+    * Use Google Maps Geolocation to allow user to give their location and show available bike stations near them 
+
 * Architecture and Technologies 
     * Google Maps API 
-        * The Google Maps API will be used to map out the bike riders path in the visualization. Mapping out the start point to the end point. 
-* Wireframe 
-    * The app will be a single screen, time & amount of bikes in use will show on screen along with playback controls. Also will have a link to github and personal website. 
-    ...
-* Implementation Timeline
-    * Wednesday - Day 1
-        * Create skeleton, bike classes and methods
-        * 
+        * Use geolocation permission to locate the users location and show all stations near them. 
+        * The Google Maps API will be used to map out the NYC Area and put markers of each bike station given by lat & lng lines given by the API. 
+        
+
