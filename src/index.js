@@ -1,8 +1,10 @@
 import './styles/index.scss';
 import makeRequest from './fetch'
+import {initAutocomplete} from '../lib/map'
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('loaded')
+    // initAutocomplete()
     makeRequest('GET', 'https://cors-anywhere.herokuapp.com/http://citibikenyc.com/stations/json')
     .then((datums) => {
     JSON.parse(datums)["stationBeanList"].forEach( bike => { 
@@ -28,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
 
         marker.setMap(map) 
+
         })}
     )}
 ); 
