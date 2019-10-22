@@ -3,7 +3,7 @@
 * Background and Overview
     * Motivation for project
         * This data visualization will show the locations of bike stations and available bikes in the NYC Area.  
-    * Citibike live bike station API:  http://citibikenyc.com/stations/json'
+    * Citibike live bike station API:  https://citibikenyc.com/stations/json'
     
 * Functionality and MVP Features
     * Create a map of the NYC Area
