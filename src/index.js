@@ -6,8 +6,12 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('loaded')
     // initAutocomplete()
     makeRequest('GET', 'https://cors-anywhere.herokuapp.com/https://citibikenyc.com/stations/json')
+<<<<<<< HEAD
        
         .then((datums) => {
+=======
+    .then((datums) => {
+>>>>>>> 7bebc25b251cd2171c3eea60e13bc6bceeaf7430
     JSON.parse(datums)["stationBeanList"].forEach( bike => { 
         
         const contentString = `<div>${'Available Bikes:  '}</div><div>${bike['availableBikes']}</div>`
