@@ -1,5 +1,7 @@
 * Citibike NYC Data Visualization
 
+Live site [here](​kdegnan1.github.io/Citibike/)
+
 * Background and Overview
     * Motivation for project
         * This data visualization will show the locations of bike stations and available bikes in the NYC Area.  
