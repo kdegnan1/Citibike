@@ -19,6 +19,7 @@
         * Use geolocation permission to locate the users location and show all stations near them. 
         * The Google Maps API will be used to map out the NYC Area and put markers of each bike station given by lat & lng lines given by the API. 
         
+![screenshot of app](ext.jpg)
         
         
 
