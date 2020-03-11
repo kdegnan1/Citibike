@@ -33,7 +33,9 @@ html, body {
   margin-left: 30px;
   border-radius: 5px;
   border: solid lightgrey 2px;
-  padding-top: 10px; }
+  padding-top: 10px; 
+  color: #a1abc6;
+}
 
 .info-box:hover {
   border: solid lightblue 2px; }
@@ -112,7 +114,11 @@ i {
 
 a {
   text-decoration: none;
-  font-style: normal; }
+  font-style: normal; 
+  color: #a1abc6;
+  font-family: 'Overpass', Helvetica, Arial, 'Droid Sans', sans-serif;
+  font-size: 40px;
+}
 
 p {
   font-size: 40px; }

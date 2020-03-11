@@ -17,7 +17,6 @@ html,body {
     height:100%; 
     background-color:#17263c; 
     display: flex; 
-   
 }
 
 .box input { 
@@ -44,6 +43,9 @@ html,body {
     border-radius: 5px;
     border: solid lightgrey 2px;
     padding-top: 10px;
+    color: #a1abc6;
+    font-family: 'Overpass', Helvetica, Arial, 'Droid Sans', sans-serif; 
+
 }
 
 .info-box:hover { 
@@ -85,6 +87,7 @@ html,body {
 .stats-2:hover { 
     border: solid lightblue 2px; 
 }
+
 .stats-3 { 
     font-family: 'Overpass', Helvetica, Arial, 'Droid Sans', sans-serif; 
     border: solid lightgrey 3px; 
@@ -126,20 +129,7 @@ html,body {
     margin-left: 15px; 
 }
 
-i { 
-    font-size: 20px;
-    padding-left: 30px; 
-    font-family:'FontAwesome';
-    text-decoration: none;
-}
 
-
-
-a { 
-    text-decoration: none;
-    font-style: normal; 
-
-}
 
 p { 
     font-size: 40px; 
