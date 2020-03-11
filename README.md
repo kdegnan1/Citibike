@@ -1,8 +1,10 @@
 * Citibike NYC Data Visualization
 
+* Live site: ​https://kdegnan1.github.io/Citibike/
+
 * Background and Overview
     * Motivation for project
-        * This data visualization will show the locations of bike stations and available bikes in the NYC Area.  
+        * This data visualization will show the locations of bike stations and available bikes in the NYC Area in live time.  
     * Citibike live bike station API:  https://citibikenyc.com/stations/json'
     
 * Functionality and MVP Features
@@ -16,5 +18,8 @@
     * Google Maps API 
         * Use geolocation permission to locate the users location and show all stations near them. 
         * The Google Maps API will be used to map out the NYC Area and put markers of each bike station given by lat & lng lines given by the API. 
+        
+![screenshot of app](ext.jpg)
+        
         
 
