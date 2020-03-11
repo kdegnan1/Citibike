@@ -1,6 +1,6 @@
 * Citibike NYC Data Visualization
 
-Live site [here](​https://kdegnan1.github.io/Citibike/)
+Live site (​https://kdegnan1.github.io/Citibike/ "here")
 
 * Background and Overview
     * Motivation for project
