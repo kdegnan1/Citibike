@@ -5,7 +5,7 @@
 ### Background and Overview
 * Motivation for project
     * This data visualization will show the locations of bike stations and available bikes in the NYC Area in live time.  
-* Citibike live bike station API:  https://citibikenyc.com/stations/json'
+* Citibike live bike station API:  https://citibikenyc.com/stations/json
     
 ### Functionality and MVP Features
 * Create a map of the NYC Area
@@ -85,8 +85,8 @@
         ); 
         ```
 * Fetched and stored data asynchronously from the CitiBike API using XML requests to get live data of available bikes at any station in the NYC area
-    ```Javascript 
-        const makeRequest= (method, url) => {
+```Javascript 
+    const makeRequest= (method, url) => {
     return new Promise(function (resolve, reject) {
         var xhr = new XMLHttpRequest();
         xhr.open(method, url);
@@ -110,8 +110,8 @@
         xhr.send();
     });
 }
-
-    ```
+```
+    
 
         
 ![screenshot of app](ext.jpg)
